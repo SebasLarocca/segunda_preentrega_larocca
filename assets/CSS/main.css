@@ -1,0 +1,544 @@
+@font-face {
+    font-family: Montserrat_bold;
+    src: url("./static/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Montserrat_medium;
+    src: url("./static/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: Montserrat_semibold;
+    src: url("./static/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: Montserrat_light;
+    src: url("./static/Montserrat-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+}
+
+.grilla_principal {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8.5% 30% 35% 30% 20% 5%;
+    grid-template-areas:    "encabezado"
+                            "wod_del_dia"    
+                            "imagen_principal"
+                            "video_intro"    
+                            "cita"
+                            "pie_pagina";
+}
+
+.encabezado {
+    grid-area: encabezado;
+}
+.wod_del_dia {
+    grid-area: wod_del_dia;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    border: #EBD0A4 solid;
+    padding: 1%;
+    border-radius: 10px;
+
+}
+.imagen_principal {
+    grid-area: imagen_principal;
+}
+    .video_intro {
+    grid-area: video_intro;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+.cita {
+    grid-area: cita;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+
+}
+
+
+
+.pie_pagina {
+    grid-area: pie_pagina;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+
+/* Barra navegación --------------------------  */
+nav {
+    height: 100%;
+}
+
+.container-fluid {
+    font-family: Montserrat_semibold;
+    background-color: #4B749E;
+}
+
+.navbar {
+    background-color: #4B749E;
+}
+
+.logo {
+    height: 70px;
+    
+     
+}
+
+.nav-link {
+    color: #A4C8EB;  
+}
+
+/* Fin barra navegación -------------------------- */
+
+
+/* Propias de shop */
+
+.girl_image {
+    width: 100%;
+}
+
+.product_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    justify-content:space-around 
+}
+
+.product_card {
+    padding: 1%;
+    width: 80%;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 1%;
+
+}
+
+.product_card h3 {
+    padding: 5%;
+    font-family: Montserrat_medium;
+    
+}
+
+.product_card h5 {
+    padding: 5%;
+    font-family: Montserrat_medium;
+    
+}
+
+.product_card h6 {
+    padding: 5%;
+    font-family: Montserrat_medium;
+    
+}
+
+.product_card img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+/* Fin propias del shop */
+
+ .titulo_wod {
+    font-family: Montserrat_bold;
+}
+
+.letra_chica {
+    font-family: Montserrat_light;
+    font-size: 0.8rem;
+}
+
+.margen_titulo {
+    margin-bottom: 3%;
+}
+
+.swing_img {
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Footer ----------------------------------- */
+
+footer{
+
+    width: 100%;
+    background-color: #EBD0A4;
+    height: 64px;
+}
+
+footer h6 {
+    top: 40%;
+    left: 29px;
+    color: #4B749E;
+    font-family: "Montserrat_medium";
+    font-size: 12px;
+}
+
+footer .redes_sociales{
+    padding: 10px 0;
+}
+
+footer svg {
+    fill: #4B749E;
+    width:30px;
+    height:20px;
+
+    
+}
+
+
+
+.wod_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin_div {
+    margin-top: 50px;    
+    margin-bottom: 15px;
+}
+.box {
+        float: left;
+        width: 80%;
+}
+
+.box blockquote {
+    padding: 0% 0% 15% 10%;
+}
+
+.box blockquote h6 {
+    padding-left: 60%;
+    padding-top: 3%;
+    font-size: medium;
+    font-style:normal;
+ 
+}
+
+.historico_container{
+    display: flex;
+}
+
+.title_container_wods_históricos {
+    position: relative;
+    background-color: #9E875F;
+    color: white;
+    font-family: "Montserrat_semibold";
+    font-size: 18;
+    width: 50%;
+    height: fit-content;
+    padding: 7px;
+    top: 70px;
+    left: 130px;
+}
+
+.wod_card_small_container {
+    position: relative;
+    width: 80%;
+    height: 505px;
+    top: 120px;
+    left: 120px;
+    overflow-y:scroll;
+    
+}
+
+.hijo_1 {
+    display: flex;
+    width: 70%;
+    height: 738px;
+    background-color: #EBD0A4;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.hijo_2 {
+        width: 30%;
+}
+
+.hijo_2 img {
+    width: 415px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+
+#new_video {
+    padding-top: 10px;
+}
+
+
+
+
+.wod_card_small {
+    position: relative;
+    width: 40%;
+    height: 15%;
+    background-color: #9E875F;
+    border-radius: 127px;
+    display: inline-block;
+    margin: 10px
+}
+
+.wod_card_small_text {
+    position: relative;
+    font-family: "Montserrat_light";
+    color: white;
+    top: 8px;
+    left: 20px;
+    font-size: 1rem;
+} 
+
+.wod_card_small_text p {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+/*
+
+.wod_card_small_container::-webkit-scrollbar-track {
+    background: white;
+}
+*/
+.wod_card_small_container::-webkit-scrollbar {
+    width: 3px;
+    
+}
+
+
+.wod_card_small_container::-webkit-scrollbar-thumb {
+    background-color: #EBD0A4;    
+    border-radius: 50px;       
+    border: 3px solid #9E875F;
+}
+
+
+.bases_container {
+    display: flex;
+    
+}
+
+.base_1 {
+    width: 50%;
+    margin: 4% 2% 2% 1.5%;
+    border-radius: 10px;
+    font-family: Montserrat_medium;
+    color: #4B749E;
+    padding: 1.5%
+}
+
+.entrenar {
+    background-color: #4B749E;
+    color: #EBD0A4 ;
+}
+.alimentarme {
+    background-color: #9E875F;
+    color: white;
+}
+.dormir {
+    background-color: #EBD0A4;
+}
+
+.planificar {
+    border: dotted grey;
+}
+
+.autor{
+    padding-left: 52%;
+    padding-top: 3%;
+    font-size: 1.5rem;
+    font-style:normal;
+    font-family: Montserrat_medium;
+    
+
+}
+
+.cita_bases {
+    position: relative;
+    left: 30%;
+    margin-top: 2.7%;
+    width: 35%;
+}
+
+
+
+.img_width {
+    width: 100%;
+}
+
+.ofertas_card {
+  
+        position:absolute;
+        border-radius: 127px;
+        opacity: 70%;
+        width: 30%;
+        height: 20%;
+        right: 5%;
+        top: 30%;
+        background-color: #4B749E;
+}
+
+.ofertas__title {
+    color: white;
+    font-size: x-large;
+    font-family: Montserrat_bold;
+    
+}
+
+.paragraph__ofertas {
+    color: white;
+}
+
+
+.alimentacion {
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.cuandrante_1 {
+    width: 50%;
+    margin: 2%;
+    margin-top: 4%;
+    border-radius: 10px;
+    font-family: Montserrat_medium;
+    
+}
+
+.cuandrante_2 {
+width: 50%;
+margin: 2%;
+margin-top: 4%;
+border-radius: 2%;
+font-family: Montserrat_medium;
+}
+
+.cuandrante_1 img, .cuandrante_2 img {
+    border-radius: 2%;
+}
+
+.cuandrante_2 h5, .cuandrante_1 h5{
+    margin-top: 2%;
+    color: #4B749E;
+    margin-right: 5%;
+}
+.cuandrante_2 p, .cuandrante_1 p{
+    margin-top: 2%;
+    color: #4B749E;
+    margin-right: 5%;
+}
+
+.cuandrante_2 h3, .cuandrante_1 h3{
+    color: white;
+}
+
+    
+
+
+/* Grilla principal -------------------------------------------------------------------------------------- */
+
+@media (min-width: 480px) {
+    
+body{
+    background-color:aqua;
+    }
+
+.grilla_principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6fr 7fr 1fr;
+    grid-template-areas:    "encabezado     encabezado"
+                            "wod_del_dia    imagen_principal"
+                            "video_intro    cita"
+                            "pie_pagina     pie_pagina";
+    
+}
+
+.title_container {
+    background-color: #9E875F;
+    color: white;
+    font-family: "Montserrat_semibold";
+    font-size: 18;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+}
+
+#new_video {
+    width: 90%;
+    height: 80%;
+    
+}
+
+.frase {
+    font-family: Montserrat_medium;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+footer svg {
+    fill: #4B749E;
+    width:20px;
+    height:20px
+}
+/* Fin grilla principal --------------------------------------------------------------------------------------*/
+
+/* Areas: 
+
+/* encabezado -------------------------------------------------------------------------------------- */
+
+
+
+/* fin encabezado --------------------------------------------------------------------------------------*/
+
+/* wod del día --------------------------------------------------------------------------------------*/
+
+
+
+/* fin wod del día --------------------------------------------------------------------------------------*/
+
+/* imagen_principal --------------------------------------------------------------------------------------*/
+
+
+
+/* fin imagen_principal --------------------------------------------------------------------------------------*/
+
+/* video_intro --------------------------------------------------------------------------------------*/
+
+
+
+/* fin video_intro --------------------------------------------------------------------------------------*/
+
+/* cita --------------------------------------------------------------------------------------*/
+
+
+
+/* fin wod del día --------------------------------------------------------------------------------------*/
+
+
+
+}
