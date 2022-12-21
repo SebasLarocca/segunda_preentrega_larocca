@@ -24,9 +24,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: beige;
-}
 
 .grilla_principal {
     display: grid;
@@ -462,10 +459,6 @@ font-family: Montserrat_medium;
 /* Grilla principal -------------------------------------------------------------------------------------- */
 
 @media (min-width: 480px) {
-    
-body{
-    background-color:aqua;
-    }
 
 .grilla_principal {
     display: grid;
